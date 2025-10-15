@@ -1,8 +1,15 @@
 import { Component } from '@angular/core';
+import { Hero } from './hero/hero';
+import { Cursos } from './cursos/cursos';
+import { Feedbacks } from './feedbacks/feedbacks';
 
 @Component({
   selector: 'app-inicio',
-  imports: [],
+  imports: [
+    Hero,
+    Cursos,
+    Feedbacks
+  ],
   templateUrl: './inicio.html',
   styleUrl: './inicio.scss'
 })
