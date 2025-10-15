@@ -1,0 +1,37 @@
+@use "../../../style/index" as *;
+
+#header {
+  .nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      h1 {
+        font-size: 15px;
+        color: $cor-texto;
+      }
+    }
+    ul {
+      a {
+        text-decoration: none;
+        color: $cor-texto;
+      }
+      a:hover {
+        text-decoration: none;
+        color: $cor-secundaria;
+        border-bottom: 1px solid $cor-secundaria;
+      }
+
+      li {
+        display: inline-block;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
